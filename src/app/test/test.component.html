@@ -1,0 +1,16 @@
+<div class="card">
+  <img [src]="persoana.linkPozaProfil" alt="Peisaj">
+  <div>
+    Nume: {{persoana.nume | titlecase}}
+  </div>
+  <div>
+    Varsta: {{persoana.varsta}}
+  </div>
+  <div *ngIf="persoana.inaltime>160">
+    Inaltime: {{persoana.inaltime}}
+  </div>
+
+  <div>{{date | date:'dd/MM/yyyy'}}</div>
+
+  <button (click)="delete()">Delete</button>
+</div>
